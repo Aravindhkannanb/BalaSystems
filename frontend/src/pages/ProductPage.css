@@ -1,0 +1,57 @@
+.product-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details {
+    margin-left: 20px;
+    max-width: 600px;
+  }
+  
+  .product-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-company, .product-type, .product-configuration, .product-bay-rack, .product-warranty, .product-price {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  
+  .add-to-cart-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  

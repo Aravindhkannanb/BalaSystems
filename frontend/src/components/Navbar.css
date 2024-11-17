@@ -1,0 +1,210 @@
+/* Navbar styles */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+
+.navbarSpace{
+    position:static !important;
+}
+.navbar {
+    width: 97.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color:black;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    padding: 10px;
+}
+
+.mobile-navbar {
+    flex-direction: column;
+}
+
+.menu-button, .icon-button {
+    background: none;
+    border: none;
+    color: black;
+    padding: 30px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    padding-left: 70px;
+}
+
+.logo-container {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 0px;
+}
+
+.menu-items {
+    display: flex;
+    color: orangered;
+    gap: 20px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    z-index: 1000;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 3;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error-text {
+    color: red;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-item-container {
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.menu-item-container.hover {
+    transform: scale(1.10);
+    background-color: rgb(231, 126, 61);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.menu-item {
+    color: black;
+    font-size: 16px;
+    font-weight:600;
+    font-family: system-ui,'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:auto;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.sidebar-item-container {
+    padding: 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-item {
+    display: block;
+}
+
+.show-sidebar {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    background: none
+}
+
+span.l1{
+    color: red;
+}
+
