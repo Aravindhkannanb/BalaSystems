@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .search-bar-container {
+      flex-direction: column; /* Row direction for larger screens */
+      align-items: center;
+    }
+
+
+  
+    .search-bar-container input {
+      margin-bottom: 0; /* Remove bottom margin on larger screens */
+      width: 100%; /* Add some space to the right for the dropdowns */
+    }
+  
+    .search-bar-container select {
+        flex: 1;
+    }
+    .options{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  }

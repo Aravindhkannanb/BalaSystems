@@ -1,0 +1,119 @@
+.title{
+    background: white;
+    width: auto;
+    font-size: 1.5rem;
+    font-style: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* ShowByCategory.css */
+
+.outerContainer {
+    padding-top: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color:gainsboro;
+}
+
+.offerZoneContainer {
+    position: relative;
+    width: 50%;
+    height: 450px;
+    padding: 5px;
+}
+
+.productContainer {
+    width: 50%;
+    padding: 10px;
+    background-color:gainsboro
+}
+
+.productRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.cardImage {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.cardImage1 {
+    height: 200px;
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.textOverlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.overlayText {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 464px) {
+    .outerContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .offerZoneContainer, .productContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .productRow {
+        flex-direction: column;
+    }
+
+    .cardImage1 {
+        width: 100%;
+    }
+}
+
+.products-container {
+    display: flex;
+    flex-wrap:wrap;
+    overflow-x: auto;  
+    padding: 3rem;
+    gap: 1rem;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    background-color:gainsboro;
+  }
+   
+  
