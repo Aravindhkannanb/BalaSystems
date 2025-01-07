@@ -101,7 +101,9 @@ const Cart = () => {
             {items.map(item => (
               <div className="cart-item" key={item.id} onClick={() => navigate('/product/' + item.id)}>
                 <img src={item.imageUrl} alt={item.name} className="cart-item-image" />
+                
                 <div className="cart-item-details">
+                  {console.log(item.imageUrl)}
                   <h2 className="cart-item-name">{item.name}</h2>
                   <p className="cart-item-quantity">Quantity: {item.quantity}</p>
                   <p className="cart-item-price">INR {item.price}</p>

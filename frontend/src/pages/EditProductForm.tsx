@@ -94,7 +94,15 @@ const EditProductForm = () => {
                     <div className="inputContainer">
                         <label>Product Type:</label>
                         <Select
-                            options={[{ label: 'Server', value: 'Server' }, { label: 'Workstation', value: 'Workstation' }]}
+                            options={[{ "label": "Laptop", "value": "Laptop" },
+                                { "label": "Processor", "value": "Processor" },
+                                { "label": "Graphics Card", "value": "Graphics Card" },
+                                { "label": "NAS Storage", "value": "NAS Storage" },
+                                { "label": "MotherBoard", "value": "MotherBoard" },
+                                { "label": "RAM", "value": "RAM" },
+                                { "label": "Hard Disk", "value": "Hard Disk" },
+                                { "label": "Keyboard", "value": "Keyboard" },
+                                { "label": "Server", "value": "Server" }]}
                             onChange={(option) => handleChange('productType', option.value)}
                             value={{ label: form.productType, value: form.productType }}
                         />
@@ -102,7 +110,7 @@ const EditProductForm = () => {
                     <div className="inputContainer">
                         <label>Bay or Rack:</label>
                         <Select
-                            options={form.productType === 'Server' ? [
+                            options={form.productType === 'NAS Storage' ? [
                                 { label: '2_BAY_NAS', value: '2_BAY_NAS' },
                                 { label: '3_BAY_NAS', value: '3_BAY_NAS' },
                                 { label: '4_BAY_NAS', value: '4_BAY_NAS' },
@@ -118,7 +126,13 @@ const EditProductForm = () => {
                     <div className="inputContainer">
                         <label>Company:</label>
                         <Select
-                            options={[{ label: 'Company A', value: 'Company A' }, { label: 'Company B', value: 'Company B' }]}  // Replace with dynamic data
+                            options={[{ "label": "ALL", "value": "" },
+                                { "label": "HP", "value": "HP" },
+                                { "label": "LENOVO", "value": "LENOVO" },
+                                { "label": "APPLE", "value": "APPLE" },
+                                { "label": "DELL", "value": "DELL" },
+                                { "label": "AMD", "value": "AMD" },
+                                { "label": "Intel", "value": "Intel" }]}  // Replace with dynamic data
                             onChange={(option) => handleChange('company', option.value)}
                             value={{ label: form.company, value: form.company }}
                         />

@@ -16,17 +16,25 @@ const SearchBar = ({ onSearchChange, onFilterChange, onTypeChange, onSortChange 
           <option value="">ALL</option>
           <option value="HP">HP</option>
           <option value="LENOVO">LENOVO</option>
-          <option value="ACER">APPLE</option>
+          <option value="APPLE">APPLE</option>
           <option value="DELL">DELL</option>
+          <option value="AMD">AMD</option>
+          <option value="Intel">INTEL</option>
+          <option value="Samsung">Samsung</option>
+          <option value="NVIDIA">NVIDIA</option>
         </select>
 
         <select  onChange={(e) => onTypeChange(e.target.value)} style={{ padding: '10px', fontSize: '16px' }}>
           <option value="">ALL</option>
-          <option value="Laptop">Laptops</option>
-          <option value="Touch">Touch Models</option>
-          <option value="Other">Other Models</option>
-          <option value="Desktop">Desktop Computers</option>
-          <option value="Graphics">Graphics and Gaming</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Processor">Processor</option>
+          <option value="Graphics Card">Graphics Card</option>
+          <option value="NAS Storage">NAS Storage</option>
+          <option value="MotherBoard">MotherBoard</option>
+          <option value="RAM">RAM</option>
+          <option value="Hard Disk">Hard Disk</option>
+          <option value="Keyboard">Keyboard</option>
+          <option value="Server">Server</option>
         </select>
         <select onChange={(e) => onSortChange(e.target.value)} style={{ padding: '10px', fontSize: '16px', marginLeft: '10px' }}>
           <option value="">Sort By</option>

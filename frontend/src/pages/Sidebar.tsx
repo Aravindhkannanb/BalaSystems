@@ -12,7 +12,7 @@ const Sidebar = () => {
     navigate(path);
   };
 
-  const isAdmin = auth.currentUser?.email == 'hariharanvj2003@gmail.com';
+  const isAdmin = auth.currentUser?.email == 'aravindhkannan26@gmail.com';
 
   const handleLogout = () => {
     console.log('User logged out');

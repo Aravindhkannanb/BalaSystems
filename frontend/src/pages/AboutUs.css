@@ -1,0 +1,144 @@
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 36px;
+    color: #141414;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .company-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .company-details h2 {
+    font-size: 28px;
+    color: #0d0d0d;
+  }
+  
+  .company-details p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .working-hours h3 {
+    font-size: 24px;
+    color: #121313;
+  }
+  
+  .working-hours ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .working-hours li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .company-description h2 {
+    font-size: 28px;
+    color: #141515;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .company-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .service-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .service-item {
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #e9f5f5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    color: #1a1b1b;
+  }
+  
+  .client-commitment {
+    background-color: #ffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+  
+  .client-commitment h3 {
+    color: #101010;
+    font-size: 24px;
+  }
+  
+  .contact-us {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #264653;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .contact-us p {
+    font-size: 16px;
+  }
+  
+  .contact-us strong {
+    font-weight: bold;
+  }
+  
+  .contact-us svg {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .company-info {
+      flex-direction: column;
+    }
+  
+    .company-details,
+    .working-hours {
+      margin-bottom: 20px;
+    }
+  
+    .service-icons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

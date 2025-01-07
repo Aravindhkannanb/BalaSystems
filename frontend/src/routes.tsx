@@ -1,6 +1,7 @@
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom"
 import Home from "./pages/Home"
 import AddProductForm from "./pages/AddProduct"
+import AboutUs from "./pages/Aboutus";
 import Shop from "./pages/Shop"
 import ShippingPolicy from "./pages/ShippingPolicy"
 import TermsAndConditions from "./pages/TermsAndConditions"
@@ -11,6 +12,7 @@ import Cart from "./pages/Cart"
 import ProductPage from "./pages/ProductPage"
 import ManageProductsPage from "./pages/ManageProductPage"
 import EditProductForm from "./pages/EditProductForm"
+import CustomPC from "./pages/Custom_PC_Config";
 const Router = () => {
   return (
     <>
@@ -27,12 +29,13 @@ const Router = () => {
                 <Route path="/terms_and_conditions" element={<TermsAndConditions />} />
                 <Route path="/refund_policy" element={<RefundPolicy />} />
                 <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+                <Route path='/about_us' element = {<AboutUs />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/product/:productId" element={<ProductPage />} />
-
                 <Route path="/manage-products" element={<ManageProductsPage />} />
                 <Route path="/edit-product/:productId" element={<EditProductForm />} />
+                <Route path="/custom_pc_configuration" element={<CustomPC />} />
 
 
             </Routes>

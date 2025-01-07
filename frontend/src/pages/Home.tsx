@@ -117,10 +117,10 @@ const ShowByCategory = () => {
                     <div
                         className="cardImage1"
                         style={{ backgroundImage: "url(" + Acer + ")"}}
-                        onClick={() => navigate("/shop/Acer", { state: { company: "Server" } })}
+                        onClick={() => navigate("/shop/Keyboard", { state: { company: "Keyboard" } })}
                     >
                         <div className="textOverlay">
-                            <span className="overlayText">Server</span>
+                            <span className="overlayText">Keyboard</span>
                         </div>
                     </div>
                     <div
