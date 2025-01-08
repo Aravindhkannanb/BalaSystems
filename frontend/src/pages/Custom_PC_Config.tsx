@@ -83,8 +83,16 @@ const CustomPCForm: React.FC = () => {
     }
 
     try {
-      // Reference the document in Firestore
-      const userDocRef = doc(db, "CustomerPc_config", userId);
+      // Fetch the authenticated user's email from Firebase Auth
+      const userEmail = auth.currentUser?.email;
+
+      if (!userEmail) {
+        alert("User email not found. Please ensure you are logged in.");
+        return;
+      }
+
+      // Reference the document in Firestore using the email as the document ID
+      const userDocRef = doc(db, "CustomerPc_config", userEmail);
 
       // Add form data to the submissions array
       await setDoc(

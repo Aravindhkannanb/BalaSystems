@@ -13,6 +13,9 @@ import ProductPage from "./pages/ProductPage"
 import ManageProductsPage from "./pages/ManageProductPage"
 import EditProductForm from "./pages/EditProductForm"
 import CustomPC from "./pages/Custom_PC_Config";
+import AdminDashboard from "./pages/Admin_Custom_PC";
+import CustomDasboard from './pages/Cus_Custom_PC';
+
 const Router = () => {
   return (
     <>
@@ -36,6 +39,8 @@ const Router = () => {
                 <Route path="/manage-products" element={<ManageProductsPage />} />
                 <Route path="/edit-product/:productId" element={<EditProductForm />} />
                 <Route path="/custom_pc_configuration" element={<CustomPC />} />
+                <Route path='/admin_dashboard' element={<AdminDashboard />} />
+                <Route path='/custom_dashboard' element={<CustomDasboard />} />
 
 
             </Routes>
