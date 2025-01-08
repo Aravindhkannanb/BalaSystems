@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
             </button>
             {(!isMobile || showSidebar) && (
                 <div className={`menu-items ${showSidebar ? 'show-sidebar' : ''}`}>
-                    {['Home', 'Shop', 'Shipping Policy', 'Privacy Policy', 'Refund Policy', 'Terms and Conditions'].map((item, index) => (
+                    {['Home', 'Shop', 'Shipping Policy', 'Privacy Policy', 'Refund Policy', 'Terms and Conditions','Custom PC Configuration'].map((item, index) => (
                         <HoverableMenuItem key={index} item={item} onPress={() => handleNavigation(`/${item.toLowerCase().replace(/ /g, '_')}`)} isSidebar={isMobile} />
                     ))}
                 </div>

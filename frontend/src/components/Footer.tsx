@@ -15,7 +15,7 @@ const Footer = () => {
       <FooterMenu />
       <ContactUs />
       <div className="footer">
-        <p className="footer-text">©2024 Bala Systems</p>
+        <p className="footer-text">©2025 Bala Systems</p>
       </div>
     </div>
   );
@@ -143,11 +143,16 @@ const FooterMenu = () => {
       <div className="section">
         <h4 className="section-title">CATEGORIES</h4>
         {[
-          {name:'Servers', link:'category/server'}, 
-          {name:'Touch Models', link: 'category/touch model'},
-          {name: 'Other Models',link: 'category/other model'},
-          {name: 'Graphics and Gaming', link:'category/Graphics'}, 
-          {name: 'Desktop Computers', link: 'category/desktop'}].map((brand, index) => (
+          { "name": "Laptop", "link": "category/Laptop" },
+          { "name": "Processor", "link": "category/Processor" },
+          { "name": "Graphics Card", "link": "category/Graphics Card" },
+          { "name": "NAS Storage", "link": "category/NAS Storage" },
+          { "name": "MotherBoard", "link": "category/MotherBoard" },
+          { "name": "RAM", "link": "category/RAM" },
+          { "name": "Hard Disk", "link": "category/Hard Disk" },
+          { "name": "Keyboard", "link": "category/Keyboard" },
+          { "name": "Server", "link": "category/Server" }
+          ].map((brand, index) => (
           <div onClick={() => navigate("/shop/"+brand.link)}>
             <HoverableText key={index} text={brand.name} />
           </div>
@@ -174,10 +179,9 @@ const FooterMenu = () => {
       <div className="section">
       <h4 className="section-title">SUPPORT</h4>
       {[
-        { name: "About Us", link: "shipping_policy" },
+        { name: "About Us", link: "about_us" },
         { name: "FAQs", link: "privacy_policy" },
         { name: "Terms & Conditions", link: "terms_and_conditions" },
-        { name: "Contact Us", link: "contact_us" },
         { name: "Download AnyDesk", link: "https://anydesk.com/en/downloads/windows" },
       ].map((brand, index) => (
         <div

@@ -1,0 +1,129 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 10px;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  form {
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px; margin-bottom:50px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  form h1 {
+    text-align: center;
+    color: #171917;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #131413;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #151515;
+  }
+  
+  br {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    fieldset {
+      padding: 15px;
+    }
+  
+    legend {
+      font-size: 16px;
+    }
+  
+    input,
+    select,
+    textarea {
+      font-size: 13px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  

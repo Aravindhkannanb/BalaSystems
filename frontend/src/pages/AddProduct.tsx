@@ -35,7 +35,7 @@ const AddProductForm = () => {
     };
 
     useEffect(() => {
-        if(auth.currentUser?.email!=="hariharanvj2003@gmail.com"){
+        if(auth.currentUser?.email!=="aravindhkannan26@gmail.com"){
             navigate('/home')
         }
         const getData = async () => {
@@ -111,7 +111,7 @@ const AddProductForm = () => {
                     <label>Bay or Rack:</label>
                     <Select
                         options={
-                            form.productType === 'Server'
+                            form.productType === 'NAS Storage'
                                 ? [
                                     { label: '2_BAY_NAS', value: '2_BAY_NAS' },
                                     { label: '3_BAY_NAS', value: '3_BAY_NAS' },
@@ -136,19 +136,19 @@ const AddProductForm = () => {
                     />
                 </div>
                 <div className="inputContainer">
-                    <label>Configuration:</label>
-                    <input
-                        className="input"
-                        value={form.configuration}
-                        onChange={(e) => handleChange('configuration', e.target.value)}
-                    />
-                </div>
-                <div className="inputContainer">
                     <label>Name:</label>
                     <input
                         className="input"
                         value={form.name}
                         onChange={(e) => handleChange('name', e.target.value)}
+                    />
+                </div>
+                <div className="inputContainer">
+                    <label>Configuration:</label>
+                    <input
+                        className="input"
+                        value={form.configuration}
+                        onChange={(e) => handleChange('configuration', e.target.value)}
                     />
                 </div>
                 <div className="inputContainer">
