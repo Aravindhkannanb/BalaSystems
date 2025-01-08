@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { db } from "../config/firebase"; // Adjust the path as needed
 import { collection, getDocs } from "firebase/firestore";
 import "./Admin_Custom_PC.css";
+import axios from "axios"; // For sending HTTP requests
+
 interface Request {
   email: string;
   submissions: any[];
@@ -9,7 +11,6 @@ interface Request {
 
 const AdminDashboard: React.FC = () => {
   const [requests, setRequests] = useState<Request[]>([]);
-
   useEffect(() => {
     const fetchRequests = async () => {
       try {
@@ -30,6 +31,19 @@ const AdminDashboard: React.FC = () => {
     fetchRequests();
   }, []);
 
+  const handleEmailAction = async (email: string, action: string) => {
+    try {
+      await axios.post("http://localhost:5000/send-email", {
+        email,
+        action,
+      });
+      alert(`Email sent for action: ${action}`);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email.");
+    }
+  };
+
   return (
     <div>
       <h1>Admin Dashboard</h1>
@@ -43,9 +57,24 @@ const AdminDashboard: React.FC = () => {
               <p><strong>Processor:</strong> {submission.processor}</p>
               <p><strong>Delivery Date:</strong> {submission.deliveryTime}</p>
               <p><strong>Comments:</strong> {submission.comments}</p>
-              <button className="btn-accept">Accept</button>
-              <button className="btn-decline">Decline</button>
-              <button className="btn-deliver">Deliver</button>
+              <button 
+                className="btn-accept"
+                onClick={() => handleEmailAction(request.email, "accept")}
+              >
+                Accept
+              </button>
+              <button 
+                className="btn-decline"
+                onClick={() => handleEmailAction(request.email, "decline")}
+              >
+                Decline
+              </button>
+              <button 
+                className="btn-deliver"
+                onClick={() => handleEmailAction(request.email, "deliver")}
+              >
+                Deliver
+              </button>
               <hr />
             </div>
           ))}

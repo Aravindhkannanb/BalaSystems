@@ -12,7 +12,7 @@ const SearchBar = ({ onSearchChange, onFilterChange, onTypeChange, onSortChange 
         style={{ padding: '10px', fontSize: '16px', flex: 1 }}
       />
       <div className="options" style={{ marginLeft: '10px' }}>
-        <select  onChange={(e) => onFilterChange(e.target.value)} style={{ padding: '10px', fontSize: '16px' }}>
+        <select  onChange={(e) => onFilterChange(e.target.value)} style={{ padding: '10px', fontSize: '16px' }} >
           <option value="">ALL</option>
           <option value="HP">HP</option>
           <option value="LENOVO">LENOVO</option>

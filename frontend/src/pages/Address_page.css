@@ -1,0 +1,128 @@
+/* Global Styles for Address Management */
+.address-app-body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styles */
+  .address-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Button */
+  .address-app-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .address-app-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .address-app-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Address Card */
+  .address-app-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address-app-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .address-app-card strong {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .address-app-card-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .address-app-card-btn.delete {
+    background-color: #dc3545;
+  }
+  
+  .address-app-card-btn.delete:hover {
+    background-color: #b02a37;
+  }
+  
+  /* Form Container */
+  .address-app-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address-app-form h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .address-app-form input,
+  .address-app-form textarea,
+  .address-app-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .address-app-form textarea {
+    resize: none;
+  }
+  
+  .address-app-form-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .address-app-form-btn:first-child {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .address-app-form,
+    .address-app-card {
+      width: 90%;
+    }
+  }
+  

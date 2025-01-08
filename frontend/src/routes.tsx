@@ -15,6 +15,7 @@ import EditProductForm from "./pages/EditProductForm"
 import CustomPC from "./pages/Custom_PC_Config";
 import AdminDashboard from "./pages/Admin_Custom_PC";
 import CustomDasboard from './pages/Cus_Custom_PC';
+import Address_page from "./pages/Address_page";
 
 const Router = () => {
   return (
@@ -41,6 +42,7 @@ const Router = () => {
                 <Route path="/custom_pc_configuration" element={<CustomPC />} />
                 <Route path='/admin_dashboard' element={<AdminDashboard />} />
                 <Route path='/custom_dashboard' element={<CustomDasboard />} />
+                <Route path="/saved_addresses" element={<Address_page />} />
 
 
             </Routes>
