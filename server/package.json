@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "nodemailer": "^6.9.16",
     "stripe": "^16.10.0",
     "uuid": "^10.0.0"
   }
